@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c5bfbe"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/center_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerInParent="true"
+        android:text="MainActivity"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center_tip"
+        android:layout_marginTop="6dp"
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
+        android:onClick="openFragment"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerInParent="true"
+        android:text="Open Fragment"/>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
