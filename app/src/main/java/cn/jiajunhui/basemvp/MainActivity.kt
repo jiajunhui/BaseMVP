@@ -28,6 +28,10 @@ class MainActivity : BaseAppActivity<MainPresenter, IMainPresenter.IMainView>(),
         mPresenter?.loadData()
     }
 
+    override fun onSuccess() {
+        switchScreenFillState(this, true, false)
+    }
+
     override fun onErrorRetry() {
         super.onErrorRetry()
         mPresenter?.loadData()

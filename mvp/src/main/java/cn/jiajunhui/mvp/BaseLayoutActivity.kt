@@ -5,14 +5,16 @@ import android.support.v4.util.SparseArrayCompat
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import android.view.View
+import cn.jiajunhui.mvp.extension.ActivityUtilsInterface
 import cn.jiajunhui.mvp.layoutcontroller.*
 import cn.jiajunhui.mvp.mvp.IView
 
-abstract class BaseLayoutActivity : AppCompatActivity(), LayoutPart, OnLayoutEventListener, IView {
+abstract class BaseLayoutActivity : AppCompatActivity(),
+        LayoutPart, OnLayoutEventListener, IView, ActivityUtilsInterface {
 
     private val typeContentView:Int = Int.MAX_VALUE
 
-    var hasInit:Boolean=false
+    private var hasInit:Boolean=false
     private var mRootView:View?=null
     private var mLayoutController:LayoutController?=null
 

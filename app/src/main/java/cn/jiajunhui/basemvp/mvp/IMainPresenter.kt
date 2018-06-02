@@ -7,7 +7,7 @@ interface IMainPresenter {
     fun loadData()
 
     interface IMainView : IView{
-
+        fun onSuccess()
     }
 
 }

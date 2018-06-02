@@ -16,6 +16,7 @@ class MainPresenter : BasePresenter<IMainPresenter.IMainView>(), IMainPresenter 
                 mView?.stateError(null)
             }else{
                 mLoadNum++
+                mView?.onSuccess()
                 mView?.stateSuccess(null)
             }
         },3000)

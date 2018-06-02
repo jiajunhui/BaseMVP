@@ -7,13 +7,15 @@ import android.support.v4.util.SparseArrayCompat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import cn.jiajunhui.mvp.extension.ActivityUtilsInterface
 import cn.jiajunhui.mvp.layoutcontroller.LAYOUT_EVENT_CODE_ERROR_RETRY
 import cn.jiajunhui.mvp.layoutcontroller.LayoutController
 import cn.jiajunhui.mvp.layoutcontroller.LayoutPart
 import cn.jiajunhui.mvp.layoutcontroller.OnLayoutEventListener
 import cn.jiajunhui.mvp.mvp.IView
 
-abstract class BaseLayoutFragment : Fragment(), LayoutPart, OnLayoutEventListener, IView {
+abstract class BaseLayoutFragment : Fragment(),
+        LayoutPart, OnLayoutEventListener, IView, ActivityUtilsInterface {
 
     private val typeContentView:Int = Int.MAX_VALUE
 
