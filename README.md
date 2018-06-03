@@ -1,13 +1,6 @@
 # 简介
 该项目是基于MVP封装的页面基类，包含了页面的状态管理。使用kotlin编写。
 
-# 使用
-```gradle
-dependencies {
-    compile 'cn.jiajunhui:mvp:0.0.2'
-}
-```
-
 # 示例
 
 Activity
